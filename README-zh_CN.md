@@ -53,5 +53,6 @@ bun create qnets my-react-app --template react-ts
 
 - `koa2`
 - `react-ts`
+- `next-ts`
 
 你可以使用 `.` 将项目名称的脚手架添加到当前目录中。

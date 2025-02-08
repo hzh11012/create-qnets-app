@@ -41,6 +41,7 @@ Options:
 
 Available templates:
 ${cyan("react-ts       react")}
+${green("next-ts       react")}
 ${magenta("koa2           koa2")}`;
 
 type ColorFunc = (str: string | number) => string;
@@ -79,6 +80,11 @@ const FRAMEWORKS: Framework[] = [
         name: "react-ts",
         display: "TypeScript",
         color: blue,
+      },
+      {
+        name: "next-ts",
+        display: "Next",
+        color: green,
       },
     ],
   },

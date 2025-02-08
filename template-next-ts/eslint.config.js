@@ -8,7 +8,12 @@ import prettier from 'eslint-plugin-prettier';
 export default tseslint.config(
     { ignores: ['dist'] },
     {
-        extends: ['next/core-web-vitals', js.configs.recommended, ...tseslint.configs.recommended],
+        extends: [
+            js.configs.recommended,
+            ...tseslint.configs.recommended,
+            'next/core-web-vitals',
+            'next/typescript'
+        ],
         files: ['**/*.{ts,tsx}'],
         languageOptions: {
             ecmaVersion: 2020,
